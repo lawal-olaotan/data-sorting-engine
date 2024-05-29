@@ -1,0 +1,5 @@
+node_modules
+.env
+test/data.json
+package-lock.json
+/client

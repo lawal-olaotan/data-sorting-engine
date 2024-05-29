@@ -1,0 +1,25 @@
+{
+  "name": "data-storage",
+  "version": "1.0.0",
+  "description": "saves webpage html and page screen for s3 model building ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node -r esm index.js",
+    "start:dev": "nodemon -r esm index.js"
+  },
+  "author": "lawal olaotan",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1378.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "esm": "^3.2.25",
+    "express": "^4.18.2",
+    "logger": "^0.0.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22",
+    "winston": "^3.8.2"
+  }
+}

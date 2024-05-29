@@ -1,0 +1,26 @@
+{
+    "TableName": "website",
+    "AttributeDefinitions": [
+      {
+        "AttributeName": "name",
+        "AttributeType": "S"
+      }
+    ],
+    "GlobalSecondaryIndexUpdates": [
+      {
+        "Create": {
+          "IndexName": "isSubscription",
+          "KeySchema": [
+            {
+              "AttributeName": "name",
+              "KeyType": "HASH"
+            }
+          ],
+          "Projection": {
+            "ProjectionType": "ALL"
+          }
+        }
+      }
+    ]
+  }
+  
